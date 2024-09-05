@@ -1,4 +1,4 @@
-import { AlertTriangle, BarChart2, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, UserCheck, UserIcon, UserPlus, Users, UserX, Zap } from "lucide-react";
+import { AlertTriangle, BarChart2, CreditCard, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, UserCheck, UserIcon, UserPlus, Users, UserX, Zap } from "lucide-react";
 import { ICategoryItem, IProductItem, ISalesItem, ISidebarItem, IStat, IUserGrowthItem } from "./types";
 
 export const SIDEBAR_ITEMS: Array<ISidebarItem> = [
@@ -157,3 +157,20 @@ export const USER_DEMOGRAPHICS_DATA = [
 ];
 
 export const ANOTHER_COLORS = ["#8884d8", "#82ca9d", "#ffc658", "#ff8042", "#0088FE"];
+
+export const SALES_PAGE_STATS_DATA = [
+    { title:"Total Revenue", icon:DollarSign,value:"$1,234,567",color:"#6366f1"},
+    { title:"Avg. Order Value", icon:ShoppingCart, value:"$78.90", color:"#10b981"},
+    { title:"Conversion Rate",icon:TrendingUp,value:"3.45%",color:"#f59e0b"},
+    { title:"Sales Growth",icon:CreditCard,value:"12.3%",color:"#ef4444"}
+
+]
+export const MONTHLY_SALES_DATA: Array<ISalesItem> = [
+	{ month: "Jan", sales: 4000 },
+	{ month: "Feb", sales: 3000 },
+	{ month: "Mar", sales: 5000 },
+	{ month: "Apr", sales: 4500 },
+	{ month: "May", sales: 6000 },
+	{ month: "Jun", sales: 5500 },
+	{ month: "Jul", sales: 7000 },
+];
