@@ -6,7 +6,7 @@ import Stat from "./Stat";
 
 interface IPageWrapper {
   headerTitle: string;
-  stats: Array<IStat>;
+  stats?: Array<IStat>;
   children?: ReactNode;
 }
 
@@ -16,7 +16,7 @@ const PageWrapper: FC<IPageWrapper> = ({ headerTitle, stats, children }) => {
       <Header title={headerTitle} />
       <section className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         <Stats>
-          {stats.map(({ title, icon, value, color }: IStat, index) => (
+          {stats?.map(({ title, icon, value, color }: IStat, index) => (
             <Stat
               key={`${title + index + color}`}
               title={title}
