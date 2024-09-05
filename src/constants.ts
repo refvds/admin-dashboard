@@ -100,3 +100,12 @@ export const PRODUCT_DATA: Array<IProductItem> = [
 	{ id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720 },
 ];  
 export const COLORS = ['#6366f1','#8b5cf6','#ec4899','#10b981','#f59e0b'];
+
+export const ANOTHER_SALES_DATA: Array<ISalesItem> = [
+    { month: "Jan", sales: 4000 },
+	{ month: "Feb", sales: 3000 },
+	{ month: "Mar", sales: 5000 },
+	{ month: "Apr", sales: 4500 },
+	{ month: "May", sales: 6000 },
+	{ month: "Jun", sales: 5500 },
+]
