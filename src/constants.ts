@@ -1,5 +1,5 @@
-import { BarChart2, DollarSign, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users } from "lucide-react";
-import { ICategoryItem, ISalesItem, ISidebarItem } from "./types";
+import { BarChart2, DollarSign, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, Zap } from "lucide-react";
+import { ICategoryItem, ISalesItem, ISidebarItem, IStat } from "./types";
 
 export const SIDEBAR_ITEMS: Array<ISidebarItem> = [
     {
@@ -75,6 +75,13 @@ export const SALES_CHANNEL_DATA: Array<ICategoryItem> = [
     {category: 'Mobile App', value: 38200},
     {category: 'Marketplace', value: 29800},
     {category: 'Social Media', value: 18700},
+]
+
+export const OVERVIE_PAGE_STATS_DATA: Array<IStat> = [
+  { title:"Total Sales", icon:Zap,value:"$12,345",color:"#6366f1"},
+  {title:"New Users", icon:Users, value:"1,234", color:"#8b5cf6"},
+  { title:"Total Products",icon:ShoppingBag,value:"567",color:"#ec4899"},
+  {title:"Conversion Rate",icon:BarChart2,value:"12.5%",color:"#10b981"}
 ]
 
 export const COLORS = ['#6366f1','#8b5cf6','#ec4899','#10b981','#f59e0b'];

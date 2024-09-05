@@ -16,3 +16,10 @@ export interface ICategoryItem {
     category: string;
     value: number;
 }
+
+export interface IStat {
+    title: string;
+    icon: typeof TypeIcon;
+    value: string;
+    color: string;
+}
