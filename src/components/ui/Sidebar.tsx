@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import { SIDEBAR_ITEMS } from "../constants";
-import { ISidebarItem } from "../types";
+import { SIDEBAR_ITEMS } from "../../constants";
+import { ISidebarItem } from "../../types";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {

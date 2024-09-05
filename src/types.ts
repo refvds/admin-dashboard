@@ -23,3 +23,12 @@ export interface IStat {
     value: string;
     color: string;
 }
+
+export interface IProductItem {
+    id: number;
+    name: string;
+    category: string;
+    price: number;
+    stock: number;
+    sales: number;
+}

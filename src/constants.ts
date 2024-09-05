@@ -1,5 +1,5 @@
-import { BarChart2, DollarSign, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, Zap } from "lucide-react";
-import { ICategoryItem, ISalesItem, ISidebarItem, IStat } from "./types";
+import { AlertTriangle, BarChart2, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, Zap } from "lucide-react";
+import { ICategoryItem, IProductItem, ISalesItem, ISidebarItem, IStat } from "./types";
 
 export const SIDEBAR_ITEMS: Array<ISidebarItem> = [
     {
@@ -84,4 +84,19 @@ export const OVERVIE_PAGE_STATS_DATA: Array<IStat> = [
   {title:"Conversion Rate",icon:BarChart2,value:"12.5%",color:"#10b981"}
 ]
 
+
+export const PRODUCTS_PAGE_STATS_DATA: Array<IStat> = [
+    { title:"Total Products", icon:Package,value:"1234",color:"#6366f1"},
+    {title:"Top Selling", icon:TrendingUp, value:"89", color:"#10b981"},
+    { title:"Low Stock",icon:AlertTriangle,value:"23",color:"#f59e0b"},
+    {title:"Total Revenue",icon:DollarSign,value:"$543,210",color:"#ef4444"}
+  ]
+
+export const PRODUCT_DATA: Array<IProductItem> = [
+	{ id: 1, name: "Wireless Earbuds", category: "Electronics", price: 59.99, stock: 143, sales: 1200 },
+	{ id: 2, name: "Leather Wallet", category: "Accessories", price: 39.99, stock: 89, sales: 800 },
+	{ id: 3, name: "Smart Watch", category: "Electronics", price: 199.99, stock: 56, sales: 650 },
+	{ id: 4, name: "Yoga Mat", category: "Fitness", price: 29.99, stock: 210, sales: 950 },
+	{ id: 5, name: "Coffee Maker", category: "Home", price: 79.99, stock: 78, sales: 720 },
+];  
 export const COLORS = ['#6366f1','#8b5cf6','#ec4899','#10b981','#f59e0b'];

@@ -7,7 +7,7 @@ import Stat from "./Stat";
 interface IPageWrapper {
   headerTitle: string;
   stats: Array<IStat>;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const PageWrapper: FC<IPageWrapper> = ({ headerTitle, stats, children }) => {
