@@ -1,4 +1,4 @@
-import { AlertTriangle, BarChart2, CreditCard, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, UserCheck, UserIcon, UserPlus, Users, UserX, Zap } from "lucide-react";
+import { AlertTriangle, BarChart2, CheckIcon, Clock, CreditCard, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, UserCheck, UserIcon, UserPlus, Users, UserX, Zap } from "lucide-react";
 import { ICategoryItem, IProductItem, ISalesItem, ISidebarItem, IStat, IUserGrowthItem } from "./types";
 
 export const SIDEBAR_ITEMS: Array<ISidebarItem> = [
@@ -174,3 +174,11 @@ export const MONTHLY_SALES_DATA: Array<ISalesItem> = [
 	{ month: "Jun", sales: 5500 },
 	{ month: "Jul", sales: 7000 },
 ];
+
+export const ORDER_PAGE_STATS_DATA = [
+    { title:"Total Order", icon:ShoppingBag,value:"1,234",color:"#6366f1"},
+    { title:"Pending Orders", icon:Clock, value:"56", color:"#10b981"},
+    { title:"Completed Orders",icon:CheckIcon,value:"1,178",color:"#f59e0b"},
+    { title:"Total Revenue",icon:DollarSign,value:"$98,765",color:"#ef4444"}
+
+]
