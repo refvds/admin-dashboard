@@ -32,3 +32,8 @@ export interface IProductItem {
     stock: number;
     sales: number;
 }
+
+export interface IUserGrowthItem {
+    month: string;
+    users: number;
+}

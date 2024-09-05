@@ -1,5 +1,5 @@
-import { AlertTriangle, BarChart2, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, Users, Zap } from "lucide-react";
-import { ICategoryItem, IProductItem, ISalesItem, ISidebarItem, IStat } from "./types";
+import { AlertTriangle, BarChart2, DollarSign, Package, Settings, ShoppingBag, ShoppingCart, TrendingUp, UserCheck, UserIcon, UserPlus, Users, UserX, Zap } from "lucide-react";
+import { ICategoryItem, IProductItem, ISalesItem, ISidebarItem, IStat, IUserGrowthItem } from "./types";
 
 export const SIDEBAR_ITEMS: Array<ISidebarItem> = [
     {
@@ -92,6 +92,14 @@ export const PRODUCTS_PAGE_STATS_DATA: Array<IStat> = [
     {title:"Total Revenue",icon:DollarSign,value:"$543,210",color:"#ef4444"}
   ]
 
+export const USER_PAGE_STATS_DATA: Array<IStat> = [
+    { title:"Total User", icon:UserIcon,value:"152845",color:"#6366f1"},
+    {title:"New Users Today", icon:UserPlus, value:"243", color:"#10b981"},
+    { title:"Active Users",icon:UserCheck,value:"98520",color:"#f59e0b"},
+    {title:"Churn Rate",icon:UserX,value:"2.4%",color:"#ef4444"}
+
+]
+
 export const PRODUCT_DATA: Array<IProductItem> = [
 	{ id: 1, name: "Wireless Earbuds", category: "Electronics", price: 59.99, stock: 143, sales: 1200 },
 	{ id: 2, name: "Leather Wallet", category: "Accessories", price: 39.99, stock: 89, sales: 800 },
@@ -108,4 +116,13 @@ export const ANOTHER_SALES_DATA: Array<ISalesItem> = [
 	{ month: "Apr", sales: 4500 },
 	{ month: "May", sales: 6000 },
 	{ month: "Jun", sales: 5500 },
+]
+
+export const USER_GROWTH_DATA: Array<IUserGrowthItem> = [
+    { month: "Jan", users: 1000 },
+	{ month: "Feb", users: 1500 },
+	{ month: "Mar", users: 2000 },
+	{ month: "Apr", users: 3000 },
+	{ month: "May", users: 4000 },
+	{ month: "Jun", users: 5000 },
 ]
